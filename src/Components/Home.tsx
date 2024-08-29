@@ -1,5 +1,7 @@
 import React from "react";
 import BannerBackground from "../Assets/home-banner-background.png";
+import { Link } from 'react-router-dom';
+
 import Image from "../assets/project.png";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -14,9 +16,8 @@ const Home = () => {
           <p className="primary-text">
           Popular social commerce platform that allows users to discover, create, and share experiences. 
           </p>
-          <button className="secondary-button">
-            Get Started <FiArrowRight />{" "}
-          </button>
+
+          <Link to="/login" className="secondary-button">Get started<FiArrowRight />{" "}</Link> 
         </div>
         <div className="home-image-section">
           <img src={Image} alt="" />

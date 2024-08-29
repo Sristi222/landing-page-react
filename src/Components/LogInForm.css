@@ -1,0 +1,137 @@
+/* Wrapper for the entire form */
+.wrapper {
+    display: flex;
+    height: 90vh;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    background-color: #efe5ff; /* Lighter purple for the wrapper background */
+  }
+  
+  /* Left section with the illustration */
+  .left-section {
+    background: linear-gradient(135deg, #9b30e5 0%, #7a42d4 100%);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .illustration {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* Right section with the form */
+  .right-section {
+    background: #f6eaff; /* Soft light purple */
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .welcome-text {
+    color: #6c2dbb; /* Darker purple for text */
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* General form styling */
+  .LogInAccount h1, .registration-form h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5a189a; /* Medium-dark purple */
+  }
+  
+  .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #dcd3ff; /* Light purple for input background */
+    margin: 15px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    color: #3b1c6e; /* Darker purple for input text */
+    font-size: 16px;
+  }
+  
+  .input-box input::placeholder {
+    color: #8a77b8; /* Soft purple for placeholders */
+  }
+  
+  .input-box .icon {
+    position: absolute;
+    left: 15px;
+    font-size: 18px;
+    color: #8a77b8;
+  }
+  
+  .password-remember {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+  
+  .password-remember label input {
+    accent-color: #6c2dbb; /* Darker purple for checkboxes */
+    margin-right: 6px;
+  }
+  
+  .password-remember a {
+    color: #6c2dbb;
+    text-decoration: none;
+  }
+  
+  .password-remember a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    width: 100%;
+    height: 45px;
+    background: #6c2dbb;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: #5927a3; /* Slightly darker shade on hover */
+  }
+  
+  .registration {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .registration p a {
+    color: #6c2dbb;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .registration p a:hover {
+    text-decoration: underline;
+  }
+  

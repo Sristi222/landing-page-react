@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo from "../Assets/Logo.svg";
 import { Link } from 'react-router-dom';
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -54,11 +53,11 @@ const Navbar = () => {
       </div>
       <div className="navbar-links-container">
         <Link to="/">Home</Link>
-        <Link to="/about-us">About</Link>
+        <Link to="/aboutus">About</Link>
         <Link to="/testimonials">Features</Link>
-        <Link to="/contact">Contact</Link>
-        <button className="primary-button">Sign Up</button>
-        <button className="login-button">Log In</button>
+        <Link to="/contactus">Contact</Link>
+        <Link to="/login" className="primary-button">Sign Up</Link>
+        <Link to="/login" className="login-button">Log In</Link>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
