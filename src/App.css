@@ -1,40 +1,28 @@
 * {
-  margin: 0;
-  padding: 0; /* Reset padding and margin */
-  box-sizing: border-box;
-  font-family: "Reem Kufi", sans-serif !important;
+  
+  padding-left: 15px; /* Reset padding and margin */
+  padding-right: 10px;
+  box-sizing:content-box;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  box-sizing: content-box;
 }
 
-.App {
-  min-height: 100vh;
-  width: 85vw;
-  max-width: 1900px;
-  margin: 0 auto; /* Center the content horizontally */
-}
 
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-  background-color: #f6f6f6;
-}
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 80px;
+  min-height: 40px;
   background-color: #ffffff;
   padding: 0 20px; /* Add padding for better spacing */
 }
 
-.navbar-menu-container {
-  display: none;
-}
 
 .navbar-links-container {
   display: flex;
@@ -89,6 +77,9 @@ nav {
   cursor: pointer;
 }
 
+.home-container{
+  padding: 0;
+}
 .home-banner-container {
   position: relative;
   display: flex;
@@ -131,7 +122,7 @@ nav {
 }
 
 .secondary-button {
-  padding: 1rem 2.5rem;
+  padding: 1rem 2.7rem;
   background-color: #b234be;
   border-radius: 5rem;
   font-size: 1.1rem;
@@ -152,3 +143,59 @@ nav {
 .secondary-button:hover {
   background-color: #e48f0f;
 }
+.Feature-box
+{
+  color: #000000;
+  background-color: #edd7ef;
+  height: 700px;
+  padding-bottom: 20px;
+}
+.Feature-heading{
+  text-align: center;
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 6git0px;
+}
+.feature-container{
+  display: flex;
+
+}
+.card {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  height: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin-right: 25px;
+  border-right: 20px;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #666;
+}
+
