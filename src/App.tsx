@@ -6,8 +6,9 @@ import AboutUs from "./Components/aboutus";
 import Login from "./Components/LogIn";
 import './App.css';
 import Features from "./Components/Features";
-import Signup from "./Components/Signup";
 import Footer from "./Components/footer"
+import Dashboard from "./Components/Dashboard";
+
 
 
 function App() {
@@ -20,9 +21,11 @@ function App() {
         <Route path="/Features" element={<Features />} />
         <Route path="/login" element={<Login />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
       </Routes>
       <Footer />
     </Router>
+
   );
 }
 

@@ -181,7 +181,7 @@ nav {
   border-radius: 8px;
   overflow: hidden;
   width: 300px;
-  height: 450px;
+  height: 450;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
   margin-right: 25px;

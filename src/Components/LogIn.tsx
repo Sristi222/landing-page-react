@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./LogInForm.css";
 import { FaUser, FaLock, FaEnvelope } from "react-icons/fa";
 import bg from '../assets/bg.png';
+import { Link } from 'react-router-dom';
+import Dashboard from "./Dashboard";
+
 
 
 export default function LogIn() {
@@ -42,7 +45,9 @@ export default function LogIn() {
                 </label>
                 <a href="#" onClick={showRegister}>Forgot password?</a>
               </div>
-              <button type="submit">Login</button>
+              <Link to="/Dashboard">
+                <button type="submit">LogIn</button>
+              </Link>
               <div className="registration">
                 <p>
                   Don't have an account? <a href="#" onClick={showRegister}>Register</a>
