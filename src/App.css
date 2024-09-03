@@ -1,8 +1,7 @@
 * {
-  
   padding-left: 15px; /* Reset padding and margin */
   padding-right: 10px;
-  box-sizing:content-box;
+  box-sizing: content-box;
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
@@ -12,8 +11,6 @@ img {
   box-sizing: content-box;
 }
 
-
-
 nav {
   display: flex;
   align-items: center;
@@ -22,20 +19,22 @@ nav {
   background-color: #ffffff;
   padding: 0 20px; /* Add padding for better spacing */
 }
-.nav-logo-container{
+
+.nav-logo-container {
   display: flex;
   padding: 0;
-  
 }
+
 .logo {
   max-height: 50px; /* Adjust the height as needed */
   width: auto; /* Maintain aspect ratio */
   margin-right: auto; /* Pushes other items to the right if necessary */
 }
 
-.nav-logo-container h1{
+.nav-logo-container h1 {
   padding-left: 0;
 }
+
 .navbar-links-container {
   display: flex;
   align-items: center;
@@ -73,12 +72,11 @@ nav {
   margin-right: 1rem; /* Add space between buttons */
 }
 
-
 .navbar-cart-icon {
   font-size: 1.15rem;
 }
 
-.primary-button:hover, 
+.primary-button:hover,
 .login-button:hover {
   background-color: rgb(234, 234, 234);
   color: #000;
@@ -89,14 +87,14 @@ nav {
   cursor: pointer;
 }
 
-.home-container{
+.home-container {
   padding-bottom: 30px;
-  background: linear-gradient(112.5deg, rgb(95, 10, 135) 11.4%, rgb(164, 80, 139) 60.2%);
+  background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
 }
+
 .home-banner-container {
   position: relative;
   display: flex;
-  
   padding: 2rem 0; /* Add padding for spacing */
 }
 
@@ -157,31 +155,33 @@ nav {
 .secondary-button:hover {
   background-color: #e48f0f;
 }
-.Feature-box
-{
+
+.Feature-box {
   color: #ffffff;
-  background: linear-gradient(112.5deg, rgb(95, 10, 135) 11.4%, rgb(164, 80, 139) 60.2%);
+  background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
   height: 700px;
   padding-bottom: 20px;
 }
-.Feature-heading{
+
+.Feature-heading {
   color: #ffffff;
   text-align: center;
   margin: 0;
   padding-top: 70px;
   padding-bottom: 60px;
 }
-.feature-container{
-  display: flex;
 
+.feature-container {
+  display: flex;
 }
+
 .card {
   border: 1px solid #ffffff;
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
   width: 300px;
-  height: 450;
+  height: 450px; /* Fix typo and set height in pixels */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
   margin-right: 25px;
@@ -197,7 +197,7 @@ nav {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  padding-left:0px;
+  padding-left: 0px;
 }
 
 .card-content {
@@ -214,16 +214,24 @@ nav {
   font-size: 16px;
   color: #666;
 }
-.lifecycle{
+
+.lifecycle {
   display: flex;
-  padding-top: 10px;
+  align-items: center;
+  padding: 50px 20px;
+  background: transparent; /* Light background color */
+  border-radius: 10px;
+  margin: 20px 0;
 }
-.longimage{
-  padding-top: 100px;
+
+.lifecycle-video {
   width: 50%;
-  height: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
-.right-text{
+
+.right-text {
   color: #ffffff;
   align-items: center;
   text-align: center;
@@ -231,19 +239,74 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   padding-top: 30px;
 }
-.brief-description{
+
+.right-text h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.brief-description {
   font-size: clamp(1rem, 3vw, 1.5rem);
   max-width: 500px;
   color: #ffffff;
   text-align: justify;
   padding-left: 0px;
+  font-family: "Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif";
+  font-weight: 100;
 }
-.footer{
-  display: flex;
+
+footer {
+  background-color: rgb(242, 254, 236);
+  text-align: center;
+  margin-bottom: -3px;
+  padding: 20px 0;
+  
+
 }
-.footer-policy{
+
+.footer-container {
   display: flex;
+  padding: 0 120px;
+  text-align: left;
+
+}
+
+.footer-container h2 {
+  font-size: 30px;
+  margin: 0 0 8px 0;
+  font-weight: 400;
+}
+.email-input{
+  display: flex;
+  gap: 10px;
+}
+.email-input input {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  color: rgb(120, 118, 118);
+  padding: 10px 0;
+}
+
+.footer-links {
+  margin: 15px auto;
+  width: 25%;
+
+}
+.footer-links h2{
+  color: rgb(7 84 14);
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.footer-link th {
+  padding-right: 20px;
+  font-weight: 400;
+  font-size: 18px;
 }
