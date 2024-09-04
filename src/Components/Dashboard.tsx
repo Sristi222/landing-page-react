@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './Dashboard.css';
+import { Link } from 'react-router-dom';
+
+
 
 // Define the Project interface
 interface Project {
@@ -74,7 +77,7 @@ const Dashboard: React.FC = () => {
             <li>Dashboard</li>
             <li>Dashboard</li>
             <li>Dashboard</li>
-            <li>Calendar</li>
+            <Link to="/DateSelector"><li>Calendar</li></Link>
             <li>Dashboard</li>
           </ul>
         </nav>
