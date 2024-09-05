@@ -6,4 +6,5 @@ Then the features pages has
 ![image](https://github.com/user-attachments/assets/f5f2fc90-cff1-4d9b-b40f-ad39d3609021)
 After the user logs in the dashboard looks like this
 ![image](https://github.com/user-attachments/assets/f32a2d88-e892-4bd2-a4b8-c7a74465e767)
+We have to make a trello like application
 
