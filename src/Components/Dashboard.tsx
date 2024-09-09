@@ -76,7 +76,7 @@ const Dashboard: React.FC = () => {
             <li>Dashboard</li>
             <li>Dashboard</li>
             <li>Dashboard</li>
-            <li>Dashboard</li>
+            <Link to="/List"><li>Board</li></Link>
             <Link to="/DateSelector"><li>Calendar</li></Link>
             <li>Dashboard</li>
           </ul>

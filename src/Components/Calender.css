@@ -15,7 +15,76 @@
     margin: 0;
     color: black;
     border: 0;
-    outline: none;
+    outline: none;/* Global styles for the calendar */
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .react-calendar {
+        width: 100vw; /* Full width of the viewport */
+        height: 100vh; /* Full height of the viewport */
+        max-width: 100%; /* No limitation on max width */
+        max-height: 100%; /* No limitation on max height */
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 8px;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 0; /* No margin, full screen */
+        color: #000000;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .react-calendar__navigation {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border-radius: 8px 8px 0 0;
+        height: 50px;
+        flex-shrink: 0;
+    }
+    
+    .react-calendar__tile {
+        height: calc((100vh - 100px) / 6); /* Divide available space evenly for tiles */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    /* Task styles */
+    .task-list {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #000000;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex-shrink: 0;
+    }
+    
+    .task-list .task {
+        font-size: 0.9em;
+        color: #333;
+        padding: 5px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .task-list .task:last-child {
+        border-bottom: none;
+    }
+    
+    /* Selected date display */
+    .selected-date {
+        font-size: 1.2em;
+        color: #555;
+        text-align: center;
+        margin-bottom: 10px;
+        flex-shrink: 0;
+    }
+    
   }
   .react-calendar__navigation {
     background-color: #4CAF50;

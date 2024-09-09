@@ -8,18 +8,20 @@ import Features from "./Components/Features";
 import Footer from "./Components/footer";
 import Dashboard from "./Components/Dashboard";
 import DateSelector from "./Components/DateSelector";
+import List from "./Components/List";
+
 import "./App.css"
 
 function App() {
   const location = useLocation();
 
   // Check if the current path is either '/dashboard' or '/DateSelector'
-  const isDashboardOrDateSelector = location.pathname === '/Dashboard' || location.pathname === '/DateSelector';
+  const isDashboardOrDateSelectorOrList = location.pathname === '/Dashboard' || location.pathname === '/DateSelector' || location.pathname ==='/List'
 
   return (
     <div className="App">
       {/* Conditionally render NavBar and Footer */}
-      {!isDashboardOrDateSelector && <NavBar />}
+      {!isDashboardOrDateSelectorOrList && <NavBar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
@@ -27,8 +29,10 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/DateSelector" element={<DateSelector />} />
+        <Route path="/List" element={<List />} />
+
       </Routes>
-      {!isDashboardOrDateSelector && <Footer />}
+      {!isDashboardOrDateSelectorOrList && <Footer />}
     </div>
   );
 }
