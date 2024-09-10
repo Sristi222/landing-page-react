@@ -79,7 +79,7 @@ const List: React.FC = () => {
             <Droppable droppableId="board" direction="horizontal">
                 {(provided: DroppableProvided) => (
                     <div
-                        className="board"
+                        className="board_list"
                         {...provided.droppableProps}
                         ref={provided.innerRef}
                     >

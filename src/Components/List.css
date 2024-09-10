@@ -1,5 +1,5 @@
 /* Main board container */
-.board {
+.board_list {
   display: flex;
   flex-direction: row;
   overflow-x: auto; /* Enables horizontal scrolling */
@@ -21,6 +21,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0 10px;
   padding: 10px;
+  height: 1000px;
   width: 300px;
   min-height: 200px;
   display: flex;

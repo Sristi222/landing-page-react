@@ -181,7 +181,7 @@ nav {
   border-radius: 8px;
   overflow: hidden;
   width: 300px;
-  height: 450px; /* Fix typo and set height in pixels */
+  height: 100px; /* Fix typo and set height in pixels */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
   margin-right: 25px;
