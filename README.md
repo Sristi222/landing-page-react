@@ -8,3 +8,4 @@ After the user logs in the dashboard looks like this
 ![image](https://github.com/user-attachments/assets/f32a2d88-e892-4bd2-a4b8-c7a74465e767)
 We have to make a trello like application
 
+On hold for some days 
